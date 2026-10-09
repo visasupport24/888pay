@@ -1,0 +1,255 @@
+/* মূল পেজের বেস স্টাইল */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0f19; /* প্রিমিয়াম ডার্ক ব্যাকগ্রাউন্ড */
+    display: flex;
+    justify-content: center;
+    color: #f3f4f6;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 450px;
+    background: #111827; /* মোবাইল অ্যাপের মতো রিচ ডার্ক শেড */
+    min-height: 100vh;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* 888PAY লোগো স্টাইল */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo-glow {
+    color: #ffcc00; /* গোল্ডেন কালার */
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+.logo-accent {
+    color: #00e676; /* নিয়ন গ্রিন কালার */
+}
+
+.brand-sub-logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffcc00;
+}
+.brand-sub-logo span {
+    color: #00e676;
+}
+
+/* প্রমোশনাল ব্যানার স্টাইল */
+.promo-banner {
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    border: 1px solid #2563eb;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.promo-banner h2 {
+    color: #00e676;
+    margin: 0 0 8px 0;
+    font-size: 20px;
+}
+
+.promo-banner p {
+    color: #9ca3af;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* ইনপুট ফর্ম কার্ড */
+.card {
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #374151;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    text-align: center;
+    color: #e5e7eb;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #111827;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00e676;
+}
+
+/* বাটনের স্টাইল */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.btn-primary {
+    background: #00e676;
+    color: #0b0f19;
+}
+
+.btn-primary:hover {
+    background: #00c853;
+}
+
+.btn-secondary {
+    background: #374151;
+    color: #ffffff;
+    border: 1px solid #4b5563;
+}
+
+.btn-secondary:hover {
+    background: #4b5563;
+}
+
+.error-text {
+    color: #ef4444;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* বিকাশ, নগদ ও রকেট কালার থিম */
+.mfs-showcase {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.mfs-title {
+    font-size: 12px;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.mfs-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.mfs-item {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 28%;
+    color: white;
+    text-align: center;
+}
+
+.bkash { background-color: #d12053; }   /* বিকাশের অফিশিয়াল পিঙ্ক */
+.nagad { background-color: #f7941d; }   /* নগদের অফিশিয়াল কমলা */
+.rocket { background-color: #8c3494; }  /* রকেটের অফিশিয়াল বেগুনি */
+
+/* অ্যাপের ভেতরের ড্যাশবোর্ড সেকশন স্টাইল */
+.hidden { display: none; }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1f2937;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.badge {
+    background: #1e293b;
+    color: #ffcc00;
+    border: 1px solid #334155;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.banner {
+    background: linear-gradient(135deg, #1e3a8a, #065f46);
+    color: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.banner h3 { margin: 0 0 5px 0; font-size: 16px; }
+.banner p { margin: 0; font-size: 12px; color: #d1d5db; }
+
+.section-title {
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.grid { display: flex; gap: 15px; justify-content: space-between; }
+
+.stat-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+    padding: 15px;
+    border-radius: 10px;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.label { color: #9ca3af; font-size: 12px; margin: 0; }
+.value { font-size: 16px; font-weight: bold; color: #ffffff; margin: 5px 0; }
+.sub { color: #6b7280; font-size: 11px; margin: 0; }
+
+.income-card {
+    background: #1e293b;
+    border: 1px solid #00e676;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.value-highlight {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00e676;
+    text-shadow: 0 0 10px rgba(0,230,118,0.3);
+}
