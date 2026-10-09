@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>888PAY - অটোমেটিক ইনকাম গেটওয়ে</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- ================= রেজিস্ট্রেশন ও লগইন পেজ ================= -->
+        <div id="auth-box" class="auth-wrapper">
+            <div class="logo-container">
+                <span class="logo-glow">888</span><span class="logo-accent">PAY</span>
+            </div>
+
+            <div class="promo-banner">
+                <h2>ঘরে বসে লাখ টাকা ইনকাম! 💰</h2>
+                <p>স্মার্ট অটোমেটিক ট্রেডিং প্ল্যাটফর্মে যোগ দিন এবং প্রতিদিন নিশ্চিত রিওয়ার্ড বা ইনকাম বুঝে নিন।</p>
+            </div>
+
+            <div class="card">
+                <h3>হিসাব তৈরি করুন / লগইন করুন</h3>
+                <input type="text" id="username" placeholder="আপনার পূর্ণ নাম (শুধুমাত্র নিবন্ধনের জন্য)">
+                <input type="email" id="email" placeholder="ইমেইল ঠিকানা">
+                <input type="password" id="password" placeholder="পাসওয়ার্ড">
+                
+                <div class="btn-group">
+                    <button class="btn-primary" onclick="handleAuth('register')">নিবন্ধন করুন</button>
+                    <button class="btn-secondary" onclick="handleAuth('login')">লগইন</button>
+                </div>
+                <p id="auth-msg" class="error-text"></p>
+            </div>
+
+            <div class="mfs-showcase">
+                <p class="mfs-title">অটোমেটিক ডিপোজিট ও উইথড্র সাপোর্ট</p>
+                <div class="mfs-logos">
+                    <div class="mfs-item bkash">bKash</div>
+                    <div class="mfs-item nagad">Nagad</div>
+                    <div class="mfs-item rocket">Rocket</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= মূল অ্যাপ ড্যাশবোর্ড ================= -->
+        <div id="dashboard" class="hidden">
+            <div class="header">
+                <div class="brand-sub-logo">888<span>PAY</span></div>
+                <span class="badge">ড্যাশবোর্ড v89</span>
+            </div>
+
+            <div class="banner">
+                <h3>888PAY স্মার্ট অটোমেটিক ইনকাম</h3>
+                <p>আপনার ওয়ালেট সক্রিয় আছে। দৈনিক ইনকাম ও এক্সচেঞ্জ রেট নিচে দেখুন।</p>
+            </div>
+
+            <div class="section-title">আজকের ট্রেডিং স্ট্যাটাস</div>
+            <div class="grid">
+                <div class="stat-card">
+                    <p class="label">বিক্রয় পরিমাণ</p>
+                    <p class="value">0.00 BDT</p>
+                    <p class="sub">অর্ডার সংখ্যা: ০</p>
+                </div>
+                <div class="stat-card">
+                    <p class="label">ক্রয় পরিমাণ</p>
+                    <p class="value">0.00 BDT</p>
+                    <p class="sub">অর্ডার সংখ্যা: ০</p>
+                </div>
+            </div>
+
+            <div class="income-card">
+                <span>🟢 আপনার মোট ব্যালেন্স</span>
+                <span id="user-balance" class="value-highlight">0.00 BDT</span>
+            </div>
+
+            <div class="section-title">লাইভ ক্রিপ্টো রেট</div>
+            <div class="grid">
+                <div class="stat-card" style="width: 100%;">
+                    <p class="label">USDT এক্সচেঞ্জ রেট</p>
+                    <p class="value" id="usdt-rate">1 USDT ≈ লোড হচ্ছে...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
